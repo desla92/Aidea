@@ -1,0 +1,248 @@
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+    html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #2d2d2d;
+    font-size: 12px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* inizio header */
+header{
+    padding: 20px 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;;
+}
+.fisso{
+    background-color: #ffffff;
+    position:fixed;
+    top: 0;
+    margin:auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+}
+nav{
+    text-align: right;
+    height: 60px;
+    line-height: 60px;
+}
+.menu{
+    margin: 0 20px 0 0;
+}
+.menu a{
+    clear: right;
+    text-decoration: none;
+    color: #2d2d2d;
+    margin: 0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 24px;
+    line-height: 40px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle{
+    display: none;
+}
+nav a:hover,
+nav .active{
+    border-bottom: 2px solid;
+}
+span{
+    color: #00a99d;
+}
+nav a span:hover{
+    border-bottom: 2px solid #00a99d;
+}
+nav .activedifferent{
+    border-bottom: 2px solid #00a99d;  
+}
+/* fine header */
+/* inizio aside */
+.banner{
+    width: 100%;
+    height: 700px;
+    background: url(immagini/idée-startup-copie.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    padding: 80px 50px 0 50px; 
+    margin-top: 80px;
+}
+div.box{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 450px;
+    height: 200px;
+    padding: 30px;
+    position: relative;
+    color: #2d2d2d;
+}
+.basso-a-destra{
+    position: absolute;
+    /* bottom: 30px; */
+}
+aside p{
+    text-align: center;
+    margin-top: 15px;
+}
+aside h1{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+/* inizio main */
+.trecolonne{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+main .colatre{
+    width: 33.333%;
+    padding: 8px;
+    text-align: center;
+}
+main h1.titolo-main{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+main article p{
+    padding-top: 20px;
+    height: 130px;
+}
+main a{
+    text-decoration: none;
+}
+
+main article img.col2{
+    width: 70%;
+    margin: 30px;
+    position: relative;
+}
+main article div.box2{
+    background-color: #ffffff;
+    width: 600px;
+    height: 260px;
+    position: absolute;
+    left: 600px;
+    top: 1800px;
+    padding: 30px;
+}
+main h1.titolo-box{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+main article img.col2fine{
+    width: 100%;
+    margin-top: 50px;
+}
+main article div.box3{
+    display: none;
+}
+
+/* pulsanti */
+.button-verde{
+    color: #2d2d2d;
+    text-decoration: none; /* eliminare la sottolineatura del testo */
+    background: #00a99d;/* sfondo del bottone */
+    padding: .7em 1.5em; /* padding dal testo dal bordo del bottone */
+    outline: none; /*  eliminare bordo*/
+   
+}
+.button-giallo{
+    color: #2d2d2d;
+    text-decoration: none; /* eliminare la sottolineatura del testo */
+    background: #fdf300;/* sfondo del bottone */
+    padding: .7em 1.5em; /* padding dal testo dal bordo del bottone */
+    outline: none; /*  eliminare bordo*/
+   
+}
+.button-sfumato{
+    color: #2d2d2d;
+    text-decoration: none; /* eliminare la sottolineatura del testo */
+    background: rgb(0,169,157);
+    background: linear-gradient(90deg, rgba(0,169,157,1) 0%, rgba(253,243,0,1) 100%);
+    padding: .7em 1.5em; /* padding dal testo dal bordo del bottone */
+    outline: none; /*  eliminare bordo*/
+    
+}
+/* inizio media query da 600 a 900px */
+@media (max-width: 900px){
+    label{
+        display: block;
+        cursor: pointer; 
+    }
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a{
+        display: block;
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom: 1px solid #eaeaeb;
+        margin: 0;
+    }
+    #toggle:checked + .menu{
+        display: block
+    } 
+}
+/* inizio media query da 0 a 600  */
+@media(max-width: 600px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    main article.colatre{
+        width: 100%;
+    }
+    div.box{
+        width: 450px;
+        height: 270px;
+    }
+    .banner{
+        width: 100%;
+        height: 650px;
+    }
+    main article.colatre img{
+        margin-top: 40px;
+    }
+    main article p{
+        padding-top: 20px;
+        height: 100px;
+    }
+    main article div.box2{
+        display: none;
+    }
+    main article div.box3{
+        display: block;
+        padding: 30px;
+    }
+    main article img.col2{
+        width: 80%;
+        margin-left: 20px;
+    }
+}
