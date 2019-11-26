@@ -66,13 +66,13 @@ nav a:hover,
 nav .active{
     border-bottom: 2px solid;
 }
-span{
+header span{
     color: #00a99d;
 }
-nav a span:hover{
+header nav a span:hover{
     border-bottom: 2px solid #00a99d;
 }
-nav .activedifferent{
+header nav .activedifferent{
     border-bottom: 2px solid #00a99d;  
 }
 /* fine header */
@@ -97,13 +97,13 @@ div.box{
 }
 .basso-a-destra{
     position: absolute;
-    /* bottom: 30px; */
+    bottom: 30px; 
 }
 aside p{
     text-align: center;
     margin-top: 15px;
 }
-aside h1{
+aside h2{
     font-size: 30px;
     text-align: center;
     font-weight: 600;
@@ -120,7 +120,7 @@ main .colatre{
     padding: 8px;
     text-align: center;
 }
-main h1.titolo-main{
+main h2.titolo-main{
     padding-top: 40px;
     text-align: center;
     font-size: 30px;
@@ -148,7 +148,7 @@ main article div.box2{
     top: 1800px;
     padding: 30px;
 }
-main h1.titolo-box{
+main h2.titolo-box{
     padding-top: 10px;
     text-align: center;
     font-size: 30px;
@@ -160,6 +160,71 @@ main article img.col2fine{
 }
 main article div.box3{
     display: none;
+}
+
+/* inizio footer */
+footer h3.titolo-main{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+footer form{
+    display: flex;
+    justify-content: center;
+}
+input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 169, 157, 0.5);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input.button-verde{
+    padding: 12px 20px;
+    color: #ffffff;
+    border: 3px solid rgba(0, 169, 157);
+}
+input[type=text]:focus {
+    border: 3px solid #00a99d;
+}
+div.menusocial a span{
+    color: #2d2d2d;
+    font-size: 35px;
+}
+footer div.menusocial{
+    display: flex;
+    justify-content: center;
+}
+footer div.menusocial h2,a{
+    margin-right: 20px;
+    margin-top: 70px;
+}
+footer div.menusocial h2{
+    margin-right: 80px;
+}
+footer ul li{
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;  
+}
+footer p{
+    display: flex;
+    justify-content: center;
+}
+footer p.margintop{
+    margin-top: 40px;
+}
+footer p.marginbottom{
+    margin-bottom: 40px;
 }
 
 /* pulsanti */
