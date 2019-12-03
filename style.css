@@ -68,6 +68,7 @@ nav .active{
 }
 header span{
     color: #00a99d;
+    font-weight: 600;
 }
 header nav a span:hover{
     border-bottom: 2px solid #00a99d;
@@ -89,7 +90,7 @@ header nav .activedifferent{
 }
 div.box{
     background-color: rgba(255, 255, 255, 0.7);
-    width: 450px;
+    width: 500px;
     height: 200px;
     padding: 30px;
     position: relative;
@@ -128,7 +129,7 @@ main h2.titolo-main{
 }
 main article p{
     padding-top: 20px;
-    height: 130px;
+    height: 100px;
 }
 main a{
     text-decoration: none;
@@ -148,20 +149,15 @@ main article div.box2{
     top: 1800px;
     padding: 30px;
 }
-main h2.titolo-box{
+main h3.titolo-box{
     padding-top: 10px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
 }
-main article img.col2fine{
-    width: 100%;
-    margin-top: 50px;
+main img.sequenza{
+    position: absolute;
 }
-main article div.box3{
-    display: none;
-}
-
 /* inizio footer */
 footer h3.titolo-main{
     padding-top: 40px;
@@ -203,9 +199,6 @@ footer div.menusocial h2,a{
     margin-right: 20px;
     margin-top: 70px;
 }
-footer div.menusocial h2{
-    margin-right: 80px;
-}
 footer ul li{
     display: inline-block;
     margin: 5px;
@@ -226,15 +219,108 @@ footer p.margintop{
 footer p.marginbottom{
     margin-bottom: 40px;
 }
+.fa-instagram:hover{
+    color: #bc2a8d;
+}
+.fa-facebook-f:hover{
+    color:#3b5998;
+}
+.fa-pinterest:hover{
+    color:#c8232c;
+}
+.fa-youtube:hover{
+    color:#c4302b;
+}
+.fa-twitter:hover{
+    color: #00acee;
+}
+#logo{
+    width: 230px;
+    height: 54px;
+    background-image: url(immagini/logoblack.svg);
+    margin-top: auto;
+    margin-right: 80px;
+}
+#logo:hover{
+    width: 230px;
+    height: 54px;
+    background-image: url(immagini/logohome230x54.svg);
+}
+ul a{
+    color: #2d2d2d;
+    text-decoration-color: #2d2d2d;
+}
+/* pagina missione */
+.missione{
+        background-color: #ffffff;
+        width: 600px;
+        height: 260px;
+        position: absolute;
+        left: 700px;
+        top: 400px;
+        padding: 30px;
+    }
+.missionebassa{
+    background-color: #ffffff;
+    width: 600px;
+    height: 260px;
+    position: absolute;
+    left: 700px;
+    top: 1100px;
+    padding: 30px;
+}
 
+/* pagina accedi */
+main form{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+input[type=number] {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid #00a99d;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=password] {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid #00a99d;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.pulsante-centro{
+    text-align: center;
+    margin-top: 100px;
+}
+.margin-accedi{
+    margin-top: 40px;
+}
+.marginmenuaccedi{
+    margin-top: 80px;
+    margin-bottom: 150px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.grigio{
+    background-color: rgba(225,225,225,0.2);
+}
 /* pulsanti */
 .button-verde{
     color: #2d2d2d;
     text-decoration: none; /* eliminare la sottolineatura del testo */
     background: #00a99d;/* sfondo del bottone */
     padding: .7em 1.5em; /* padding dal testo dal bordo del bottone */
-    outline: none; /*  eliminare bordo*/
-   
+    outline: none; /*  eliminare bordo*/ 
+    text-align: center;
 }
 .button-giallo{
     color: #2d2d2d;
@@ -242,7 +328,6 @@ footer p.marginbottom{
     background: #fdf300;/* sfondo del bottone */
     padding: .7em 1.5em; /* padding dal testo dal bordo del bottone */
     outline: none; /*  eliminare bordo*/
-   
 }
 .button-sfumato{
     color: #2d2d2d;
@@ -251,9 +336,18 @@ footer p.marginbottom{
     background: linear-gradient(90deg, rgba(0,169,157,1) 0%, rgba(253,243,0,1) 100%);
     padding: .7em 1.5em; /* padding dal testo dal bordo del bottone */
     outline: none; /*  eliminare bordo*/
-    
 }
-/* inizio media query da 600 a 900px */
+.button-facebook{
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none; /* eliminare la sottolineatura del testo */
+    background: #4267b2;
+    padding: 0.7em 2.5em; /* padding dal testo dal bordo del bottone */
+    outline: none; /*  eliminare bordo*/
+    border-radius: 30px;
+}
+
+/* inizio media query da 600 a 1024px */
 @media (max-width: 900px){
     label{
         display: block;
@@ -274,6 +368,16 @@ footer p.marginbottom{
     #toggle:checked + .menu{
         display: block
     } 
+    main article img.col2{
+        width: 100%;
+    }
+    main article div.box2{
+        width: 600px;
+        height: 260px;
+        left: 100px;
+        top: 1300px;
+    }
+
 }
 /* inizio media query da 0 a 600  */
 @media(max-width: 600px){
@@ -281,12 +385,15 @@ footer p.marginbottom{
         display: flex;
         flex-direction: column;
     }
+    img.sequenza{
+        display:none;
+    }
     main article.colatre{
         width: 100%;
     }
     div.box{
         width: 450px;
-        height: 270px;
+        height: 300px;
     }
     .banner{
         width: 100%;
@@ -310,4 +417,6 @@ footer p.marginbottom{
         width: 80%;
         margin-left: 20px;
     }
+    
+
 }
