@@ -4,29 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aidea</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="immagini/flavicon.png" type="icon/png">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Amiko:400,600|Montserrat:100,400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <title>Aidea - Just say it</title>
+
+
 </head>
 <body>
-    <!-- header -->
-    <header class="fisso">
-        <h1> <a href="index.html"><img src="immagini/logohome230x54.svg" width="180px" alt="Sito Aidea"></a>
-        </h1>
-        <nav>
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle"/>
-            <div class="menu">
-                <a  href="index.html">Home</a>
-                <a href="lanostramissione.html">La nostra missione</a>
-                <a class="active" href="testimonianze.html">Testimonianze</a>
-                <a href="staff.html">Lo staff</a>
-                <a href="accedi.html"> <span>Accedi</span></a>
+        <header class="fisso">
+            <h1> <a href="index.html"><img src="immagini/logohome230x54.svg" width="180px" alt="Sito Aidea"></a>
+            </h1>
+            <nav>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle"/>
+                <div class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="lanostramissione.html">La nostra missione</a>
+                    <a class="active" href="testimonianze.html">Testimonianze</a>
+                    <a href="staff.html">Lo staff</a>
+                    <a href="accedi.html"> <span>Accedi</span></a>
+                </div>
+            </nav>
+        </header>
+        <article>
+            <div class="slider">
+                <figure>
+                <img src="immagini/prima.jpg" alt="img">
+                <img src="immagini/seconda.jpg" alt="img">
+                <img src="immagini/terza.jpg" alt="img">
+                <img src="immagini/quarta.jpg" alt="img">
+                </figure>
+            </div>    
+        </article>
+       
+    </main>
+    <footer>
+            <h3 class="titolo-main">Rimani sempre aggiornato, iscriviti anche tu alla nostra newsletter!</h3>
+            <form action="#">
+                <label for="newsletter">newsletter</label>
+                <input type="text" id="newsletter" name="newsletter" placeholder="esempio@mail.com">
+                <input class="button-verde" type="submit" value="Iscriviti">
+            </form>
+            <div class="menusocial">
+                <div id="logo"></div>
+                <div class="menusocial">
+                    <a href="https://instagram.com" target="_blank"><span class="fab fa-instagram"></span></a>
+                    <a href="https://facebook.com" target="_blank"><span class="fab fa-facebook-f"></span></a>
+                    <a href="https://it.pinterest.com" target="_blank"><span class="fab fa-pinterest"></span></a>
+                    <a href="https://youtube.com" target="_blank"><span class="fab fa-youtube"></span></a>
+                    <a href="https://twitter.com" target="_blank"><span class="fab fa-twitter"></span></a>
+                </div>
             </div>
-        </nav>
-    </header>
-   
-   
+                <ul>
+                    <li><a href="#" target="_blank">FAQ</a></li>
+                    <li>|</li>
+                    <li><a href="#" target="_blank">Aiuto</a></li>
+                    <li>|</li>
+                    <li><a href="#" target="_blank">Contattaci</a></li>
+                    <li>|</li>
+                    <li><a href="#" target="_blank">Linee guida</a></li>
+                    <li>|</li>
+                    <li><a href="#" target="_blank">Informativa sulla provacy</a></li>
+                </ul>
+                <p class="margintop">© 2019 Aidea | Attenzione: il sito è stato creato a scopo didattico dagli allievi del corso accademico Web & Digital Media
+                </p><p class="marginbottom">del primo anno della Scuola Mohole. Alcuni contenuti e riferimenti aziendali sono di fantasia. </p>
+        </footer>
 </body>
 </html>
