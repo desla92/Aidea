@@ -363,6 +363,46 @@ img{
         left:-400%;
     }
 }
+/* pagina staff */
+.pos1{
+    position: relative;
+}
+.pos2{
+    position: absolute;
+    bottom: 45px;
+    color: #ffffff;
+}
+#btntomain{
+    padding-top: 80px;
+}
+.titolo-staff{
+    font-size: 80px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 1px 10px #2d2d2d;
+}
+aside div.pos2 h2 a{
+    color: #ffffff;
+}
+main div.displayflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main div.displayflex img{
+    width: 376px;
+    height: 529px;
+    margin: 0 40px 80px 40px;
+    filter: grayscale(100%);
+}
+main div.displayflex img:hover{
+    filter: none;
+    width: 376px;
+    height: 529px;
+    background: url(immagini/saraaccesa.jpg) no-repeat;
+}
+
+
 /* pulsanti */
 .button-verde{
     color: #2d2d2d;
@@ -427,7 +467,10 @@ img{
         left: 100px;
         top: 1300px;
     }
-
+    .titolo-staff{
+        font-size: 50px;
+        padding: 0 20px;
+    }
 }
 /* inizio media query da 0 a 600  */
 @media(max-width: 600px){
@@ -467,6 +510,8 @@ img{
         width: 80%;
         margin-left: 20px;
     }
-    
+    .titolo-staff{
+        font-size: 30px;
+    }
 
 }
