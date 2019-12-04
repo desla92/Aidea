@@ -401,7 +401,22 @@ main div.displayflex img:hover{
     height: 529px;
     background: url(immagini/saraaccesa.jpg) no-repeat;
 }
-
+/* Pagina Registrati */
+.registrati{
+    margin-top: 80px;
+    padding: .7em 1.5em;
+    margin-bottom: 80px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+main{
+    background-color: rgba(225,225,225,0.2);
+}
+.titolo-registrati{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 
 /* pulsanti */
 .button-verde{

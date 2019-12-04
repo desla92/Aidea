@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aidea</title>
+    <title>Aidea - Just say it</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="immagini/flavicon.png" type="icon/png">
     <link href="https://fonts.googleapis.com/css?family=Amiko:400,600|Montserrat:100,400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
 <body>
     <!-- header -->
@@ -18,7 +19,7 @@
             <label for="toggle">&#9776;</label>
             <input type="checkbox" id="toggle"/>
             <div class="menu">
-                <a  href="index.html">Home</a>
+                <a class="active" href="index.html">Home</a>
                 <a href="lanostramissione.html">La nostra missione</a>
                 <a href="testimonianze.html">Testimonianze</a>
                 <a href="staff.html">Lo staff</a>
@@ -26,7 +27,63 @@
             </div>
         </nav>
     </header>
-   
-   
+    <main>
+        <form class="registrati" action="#" method="POST" role="form">
+            <h2 class="titolo-registrati">Non perderti le ultime idee... REGISTRATI!</h2>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome">
+            <br>
+            <br>
+            <label for="cognome">Cognome</label>
+            <input type="text" id="cognome" name="cognome" placeholder="Cognome">
+            <br>
+            <br>
+            <label for="Anno di nascita">Anno di nascita</label>
+            <input type="number" id="anno di nascita" name="anno di nascita" placeholder="Anno di nascita">
+            <br>
+            <br>
+            <label for="Città di residenza">Città di residenza</label>
+            <input type="text" id="città di residenza" name="città di residenza" placeholder="Città di residenza">
+            <br>
+            <br>
+            <label for="Impiego">Impiego</label>
+            <input type="text" id="Impiego" name="Impiego" placeholder="Impiego">
+            <br>
+            <br>
+            <input class="button-verde" type="submit" value="Registrati">
+        </form>
+    </main>
+    <!-- inizio footer -->
+    <footer>
+        <h3 class="titolo-main">Rimani sempre aggiornato, iscriviti anche tu alla nostra newsletter!</h3>
+        <form action="#">
+            <label for="newsletter">newsletter</label>
+            <input type="text" id="newsletter" name="newsletter" placeholder="esempio@mail.com">
+            <input class="button-verde" type="submit" value="Iscriviti">
+        </form>
+        <div class="menusocial">
+            <div id="logo"></div>
+            <div class="menusocial">
+                <a href="https://instagram.com" target="_blank"><span class="fab fa-instagram"></span></a>
+                <a href="https://facebook.com" target="_blank"><span class="fab fa-facebook-f"></span></a>
+                <a href="https://it.pinterest.com" target="_blank"><span class="fab fa-pinterest"></span></a>
+                <a href="https://youtube.com" target="_blank"><span class="fab fa-youtube"></span></a>
+                <a href="https://twitter.com" target="_blank"><span class="fab fa-twitter"></span></a>
+            </div>
+        </div>
+            <ul>
+                <li><a href="#" target="_blank">FAQ</a></li>
+                <li>|</li>
+                <li><a href="#" target="_blank">Aiuto</a></li>
+                <li>|</li>
+                <li><a href="#" target="_blank">Contattaci</a></li>
+                <li>|</li>
+                <li><a href="#" target="_blank">Linee guida</a></li>
+                <li>|</li>
+                <li><a href="#" target="_blank">Informativa sulla provacy</a></li>
+            </ul>
+            <p class="margintop">© 2019 Aidea | Attenzione: il sito è stato creato a scopo didattico dagli allievi del corso accademico Web & Digital Media
+            </p><p class="marginbottom">del primo anno della Scuola Mohole. Alcuni contenuti e riferimenti aziendali sono di fantasia. </p>
+    </footer>
 </body>
 </html>
