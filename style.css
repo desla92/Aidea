@@ -11,7 +11,7 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: #2d2d2d;
-    font-size: 12px;
+    font-size: 16px;
 }
 img{
     max-width: 100%;
@@ -91,7 +91,7 @@ header nav .activedifferent{
 div.box{
     background-color: rgba(255, 255, 255, 0.7);
     width: 500px;
-    height: 200px;
+    height: 270px;
     padding: 30px;
     position: relative;
     color: #2d2d2d;
@@ -129,7 +129,7 @@ main h2.titolo-main{
 }
 main article p{
     padding-top: 20px;
-    height: 100px;
+    height: 150px;
 }
 main a{
     text-decoration: none;
@@ -366,13 +366,16 @@ img{
     }
 }
 /* pagina staff */
-.pos1{
-    position: relative;
-}
-.pos2{
-    position: absolute;
-    bottom: 45px;
-    color: #ffffff;
+.banner1{
+    width: 100%;
+    height: 700px;
+    background: url(immagini/staff1.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 }
 #btntomain{
     padding-top: 80px;
@@ -382,26 +385,57 @@ img{
     text-align: center;
     font-weight: 600;
     text-shadow: 2px 1px 10px #2d2d2d;
+    color: white;
 }
-aside div.pos2 h2 a{
-    color: #ffffff;
+.container{
+    width: 50%;
+    margin: 2rem auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
 }
-main div.displayflex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-main div.displayflex img{
+.boxdescrizione1, 
+.boxdescrizione2{
+    color: #2d2d2d;
+    padding: 10%;
     width: 376px;
     height: 529px;
-    margin: 0 40px 80px 40px;
+}
+.titolo-persona{
+    font-size: 2rem;
+}
+.boxdescrizione1{
+    background-color: #00a99d;
+}
+.boxdescrizione2{
+    background-color: #fdf300;
+}
+main figure img{
     filter: grayscale(100%);
 }
-main div.displayflex img:hover{
+#cambiosara{
+    background: url(immagini/saraspenta.jpg);width:376px;height:529px;display:block;text-indent: -9999px;}
+#cambiosara:hover{
+    background: url(immagini/saraaccesa.jpg);
     filter: none;
-    width: 376px;
-    height: 529px;
-    background: url(immagini/saraaccesa.jpg) no-repeat;
+}
+#cambiolinda{
+    background: url(immagini/lindaspenta.jpg);width:376px;height:529px;display:block;text-indent: -9999px;}
+#cambiolinda:hover{
+    background: url(immagini/lindaaccesa.jpg);
+    filter: none;
+}
+#cambiolavi{
+    background: url(immagini/lavispenta.jpg);width:376px;height:529px;display:block;text-indent: -9999px;}
+#cambiolavi:hover{
+    background: url(immagini/laviaccesa.jpg);
+    filter: none;
+}
+#cambiodesi{
+    background: url(immagini/desispenta.jpg);width:376px;height:529px;display:block;text-indent: -9999px;}
+#cambiodesi:hover{
+    background: url(immagini/desiaccesa.jpg);
+    filter: none;
 }
 /* Pagina Registrati */
 .registrati{
@@ -420,22 +454,25 @@ main div.displayflex img:hover{
 
 /* pulsanti */
 .button-verde{
+    font-size: 16px;
     color: white;
     text-decoration: none; /* eliminare la sottolineatura del testo */
     background: #00a99d;/* sfondo del bottone */
-    padding: 2em; /* padding dal testo dal bordo del bottone */
+    padding: 1em; /* padding dal testo dal bordo del bottone */
     outline: none; /*  eliminare bordo*/ 
     text-align: center;
 }
 .button-giallo{
+    font-size: 16px;
     color: #2d2d2d;
     text-decoration: none; /* eliminare la sottolineatura del testo */
     background: #fdf300;/* sfondo del bottone */
-    padding: 1.4em 3em; /* padding dal testo dal bordo del bottone */
+    padding: 1em; /* padding dal testo dal bordo del bottone */
     outline: none; /*  eliminare bordo*/
 }
 
 .button-facebook{
+    font-size: 16px;
     color: #ffffff;
     font-size: 20px;
     text-decoration: none; /* eliminare la sottolineatura del testo */
@@ -489,11 +526,6 @@ main div.displayflex img:hover{
         position: unset;
         padding-top: 10px;
     }
-    .titolo-staff{
-        font-size: 50px;
-        padding: 0 20px;
-        position: unset;
-    }
     div#logo,
     div#logo:hover{
         width: none;
@@ -502,7 +534,7 @@ main div.displayflex img:hover{
     }
 }
 /* inizio media query da 0 a 600  */
-@media(max-width: 600px){
+@media(max-width: 760px){
     main{
         display: flex;
         flex-direction: column;
@@ -515,7 +547,7 @@ main div.displayflex img:hover{
     }
     div.box{
         width: 450px;
-        height: 300px;
+        height: 400px;
     }
     .banner{
         width: 100%;
@@ -526,7 +558,7 @@ main div.displayflex img:hover{
     }
     main article p{
         padding-top: 20px;
-        height: 100px;
+        height: 200px;
     }
     main article div.box3{
         display: block;
@@ -537,7 +569,7 @@ main div.displayflex img:hover{
         margin-left: 20px;
     }
     .titolo-staff{
-        font-size: 30px;
+        font-size: 45px;
     }
     div#logo,
     div#logo:hover{
@@ -560,6 +592,46 @@ main div.displayflex img:hover{
     main h2.titolo-main{
         padding-top: none;
     }
+    ul{
+        padding: 0 20px;
+    }
+    li a{
+        font-size: 10px;
+    }
+    p{
+        font-size: 20px;
+    }
+    footer p.margintop,
+    footer p.marginbottom{
+        font-size: 12px;
+        padding: 0 20px;
+    }
+    .button-verde, .button-giallo{
+        font-size: 16px;
+    }
+    .allungo{
+        width: 50px;
+    }
+    .boxdescrizione1, 
+    .boxdescrizione2{
+    color: #2d2d2d;
+    padding: 10%;
+    width: 100%;
+    height: auto;
+    }
+    .container{
+        width: 100%;
+    }
+    #btntomain{
+        padding-top: 0px;
+    }
+}
+@media(max-width: 1000px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 
