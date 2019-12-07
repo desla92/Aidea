@@ -256,23 +256,26 @@ ul a{
 .missione{
         background-color: #ffffff;
         width: 600px;
-        height: 260px;
+        height: 300px;
         position: absolute;
-        left: 700px;
+        left: 500px;
         top: 400px;
         padding: 30px;
     }
 .missionebassa{
     background-color: #ffffff;
     width: 600px;
-    height: 260px;
+    height: 350px;
     position: absolute;
-    left: 700px;
+    left: 500px;
     top: 1100px;
     padding: 30px;
 }
 .marginmenumissione{
     margin-top: 80px;
+}
+.nascondo{
+    display: none;
 }
 
 /* pagina accedi */
@@ -531,6 +534,19 @@ main figure img{
         width: none;
         height: none;
         display: none;
+    }
+    .missione,
+    .missionebassa{
+        display: none;
+        position: unset;
+    }
+    .nascondo{
+        display: block;
+        margin: 0 30px;
+        text-align: center;
+    }
+    p.nascondo{
+        font-size: 12px;
     }
 }
 /* inizio media query da 0 a 600  */
