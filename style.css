@@ -211,7 +211,8 @@ footer ul{
 }
 footer p{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
 }
 footer p.margintop{
     margin-top: 40px;
@@ -219,6 +220,7 @@ footer p.margintop{
 footer p.marginbottom{
     margin-bottom: 40px;
 }
+
 .fa-instagram:hover{
     color: #bc2a8d;
 }
@@ -418,10 +420,10 @@ main div.displayflex img:hover{
 
 /* pulsanti */
 .button-verde{
-    color: #2d2d2d;
+    color: white;
     text-decoration: none; /* eliminare la sottolineatura del testo */
     background: #00a99d;/* sfondo del bottone */
-    padding: 1.4em 3em; /* padding dal testo dal bordo del bottone */
+    padding: 2em; /* padding dal testo dal bordo del bottone */
     outline: none; /*  eliminare bordo*/ 
     text-align: center;
 }
@@ -432,14 +434,7 @@ main div.displayflex img:hover{
     padding: 1.4em 3em; /* padding dal testo dal bordo del bottone */
     outline: none; /*  eliminare bordo*/
 }
-.button-sfumato{
-    color: #2d2d2d;
-    text-decoration: none; /* eliminare la sottolineatura del testo */
-    background: rgb(0,169,157);
-    background: linear-gradient(90deg, rgba(0,169,157,1) 0%, rgba(253,243,0,1) 100%);
-    padding: 1.4em 1.5em; /* padding dal testo dal bordo del bottone */
-    outline: none; /*  eliminare bordo*/
-}
+
 .button-facebook{
     color: #ffffff;
     font-size: 20px;
