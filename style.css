@@ -184,7 +184,9 @@ input.button-verde{
     color: #ffffff;
     border: 3px solid rgba(0, 169, 157);
 }
-input[type=text]:focus {
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=password]:focus {
     border: 3px solid #00a99d;
 }
 div.menusocial a span{
@@ -290,7 +292,7 @@ input[type=number] {
     width: 20%;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 3px solid #00a99d;
+    border: 3px solid rgba(0, 169, 157, 0.5);
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
@@ -300,7 +302,7 @@ input[type=password] {
     width: 20%;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 3px solid #00a99d;
+    border: 3px solid rgba(0, 169, 157, 0.5);
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
@@ -321,53 +323,7 @@ input[type=password] {
 .grigio{
     background-color: rgba(225,225,225,0.2);
 }
-/* pagina Testimonianze */
-.slider{
-    margin-top: 80px;
-    overflow: hidden;
-}
-.slider figure img{
-    width: 20%;
-    float: left;
-}
-.slider figure{
-    position: relative;
-    width: 500%;
-    animation: 15s slider infinite;
-}
-img{
-    max-width: 100%;
-    height: auto;
-}
-@keyframes slider{
-    0%{
-        left:0%;
-    }
-    20%{
-        left:0%;
-    }
-    25%{
-        left:-100%;
-    }
-    45%{
-        left:-100%;
-    }
-    50%{
-        left:-200%;
-    }
-    70%{
-        left:-200%;
-    }
-    75%{
-        left:-300%;
-    }
-    95%{
-        left:-300%;
-    }
-    100%{
-        left:-400%;
-    }
-}
+
 /* pagina staff */
 .banner1{
     width: 100%;
@@ -390,7 +346,7 @@ img{
     text-shadow: 2px 1px 10px #2d2d2d;
     color: white;
 }
-.container{
+.contenitore{
     width: 50%;
     margin: 2rem auto;
     display:grid;
@@ -484,10 +440,62 @@ main figure img{
     outline: none; /*  eliminare bordo*/
     border-radius: 30px;
 }
+/* PAGINA TESTIMONIANZE */
+.banner2{
+    width: 100%;
+    height: 700px;
+    background: url(immagini/fotodonnaclick.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: flex-end;
+}
+.consigli{
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #00a99d;
+    margin-left: 530px;
+    margin-right: 530px;
+}
+.pos3{
+    text-align: center;
+    margin-top: 20px;
+}
+.immaginetestimonianze{
+    width: 100%;
+    height: 700px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.fototest{
+    margin: 10px;
+}
+.form_test{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 30;
+}
+form h2{
+    margin-bottom: 30px;
+}
+.obb{
+    font-size: 14px;
+
+}
+.bordo{
+    padding: 10px;
+    border: 3px solid rgba(0, 169, 157, 0.5);
+}
 @media(max-width: 1300px){
     main article img.col2{
         width: 100%;
-        margin: 30px;
         position: unset;
     }
     main article div.box2{
@@ -548,6 +556,10 @@ main figure img{
     p.nascondo{
         font-size: 12px;
     }
+    .button-facebook,
+    .button-verde {
+        display: inline-block;
+    }
 }
 /* inizio media query da 0 a 600  */
 @media(max-width: 760px){
@@ -580,10 +592,6 @@ main figure img{
         display: block;
         padding: 30px;
     }
-    main article img.col2{
-        width: 80%;
-        margin-left: 20px;
-    }
     .titolo-staff{
         font-size: 45px;
     }
@@ -595,7 +603,7 @@ main figure img{
     }
     main article img.col2{
         width: 95%;
-        margin: 30px;
+        margin: 0px;
         position: unset;
     }
     main article div.box2{
@@ -641,13 +649,27 @@ main figure img{
     #btntomain{
         padding-top: 0px;
     }
+    .button-facebook,
+    .button-verde {
+        display: inline-block;
+    }
+    input[type=password],
+    input[type=text],
+    input[type=number]{
+        width: 100%;
+    }
 }
 @media(max-width: 1000px){
+    .contenitore{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
     .container{
         display: flex;
         flex-direction: column;
     }
-    
 }
 
 
